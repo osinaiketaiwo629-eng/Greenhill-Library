@@ -1,12 +1,13 @@
 # Greenhill Library Website
 
-A Library Website created using HTML, CSS XML, XLST and DTD. This was a group project, and was built as part of a Module at Middlesex University (Year 1).
+A Library Website created using HTML, CSS XML, XSLT and DTD. This was a group project, and was built as part of a Module at Middlesex University (Year 1).
 
 ## Files 
 
 Library.html 
-Books.xml
-Books.xsl
+index.html
+books.xml
+books.xsl
 books.dtd
 
 ## Purpose 
@@ -31,7 +32,7 @@ Promotion: The Library website was built to promote the Greenhill Library and pr
 
 I was given the brief about the Greenhill Library Company. I was primarily responsible for the troubleshooting of the XML, XSLT and CSS code.
 
-## Technolgies used
+## Technologies used
 
 HTML, CSS, XML, XSLT, DTD
 
