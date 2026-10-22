@@ -1,0 +1,131 @@
+<<<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial;
+    background-color: #aceec7;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button,
+.tab a.tablinks {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.tab button:hover,
+.tab a.tablinks:hover {
+    background-color: #3fff35;
+}
+
+.tab button.active,
+.tab a.tablinks.active {
+    background-color: #8ee95a;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #020401;
+    border-top: none;
+}
+
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Greenhill Library</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'About Us')">About Us</button>
+    <button class="tablinks" onclick="openCity(event, 'Opening Times')">Opening Times</button>
+    <a href="books.xml" class="tablinks">Books</a>
+</div>
+
+<div id="About Us" class="tabcontent">
+    <h3>About Us</h3>
+    <p>Greenhill Library is a government owned library that is based in Harrow near the harrow bus station where it is easily accessible...</p>
+    <img src="https://www.harrowtowncentre.co.uk/wp-content/uploads/2021/05/exterior-01.jpg.855x0_q85.jpg" alt="Greenhill library">
+</div>
+
+<div id="Opening Times" class="tabcontent">
+    <h3>Opening Times</h3>
+    <p>The Opening times are listed below:</p>
+
+    <table>
+        <tr><th>Day</th><th>Opening Time</th><th>Closing Time</th></tr>
+        <tr><td>Monday</td><td>10:00 AM</td><td>6:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>10:00 AM</td><td>6:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>10:00 AM</td><td>6:00 PM</td></tr>
+        <tr><td>Thursday</td><td>10:00 AM</td><td>6:00 PM</td></tr>
+        <tr><td>Friday</td><td>10:00 AM</td><td>6:00 PM</td></tr>
+        <tr><td>Saturday</td><td>10:00 AM</td><td>6:00 PM</td></tr>
+        <tr><td>Sunday</td><td>Closed</td><td>-</td></tr>
+    </table>
+</div>
+
+<div id="Books" class="tabcontent">
+    <h3>Books</h3>
+    <p>Here are some of the books available in the library:</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+<div class="info-box">
+    <h1>Things you need to know</h1>
+
+    <p>The main thing you need to know about the books we have in the library is that the books have a unique number on the back...</p>
+
+    <p style="color: Red; font-weight: bold;">
+        PLEASE MAKE SURE THAT THE NUMBER IS THERE OR ELSE WE WILL NOT BE ABLE TO PROCESS YOUR REQUEST!!!
+    </p>
+
+    <p>
+        Also if this is the case with a purchased book then we would not be able to give a REFUND...
+    </p>
+
+    <h3>Example:</h3>
+    <img src="https://youronlinepublicist.com/wp-content/uploads/2022/07/ISBN.jpg"
+         alt="ISBN number example" width="400" height="250">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+
+.tab {
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: #f1f1f1;
+}
+
+.tab button,
+.tab a.tablinks {
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 17px;
+text-decoration: none;
+color: rgb(0, 0, 0);
+}
+
+.tab button:hover {
+background-color: #3fff35;
+}
+
+.tab button a.tablinks:hover {
+background-color: #3fff35;
+}
+
+.tab button.active {
+background-color: #8ee95a;
+}
+
+.tab a.tablinks.active {
+background-color: #8ee95a;
+}
+
+
+.tabcontent {
+display: none;
+padding: 6px 12px;
+border: 1px solid #020401;
+border-top: none;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Greenhill Library</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+
+<div class="tab">
+<button class="tablinks" onclick="openCity(event, 'About Us')">About Us</button>
+<button class="tablinks" onclick="openCity(event, 'Opening Times')">Opening Times</button>
+<a href="books.xml" class="tablinks">Books</a>
+</div>
+
+<div id="About Us" class="tabcontent">
+<h3>About Us</h3>
+<p>Greenhill Library is a government owned library that is based in Harrow near the harrow bust station where it is easily accessable. You can aslo use the printers as well as the computers that are provcided by the library, however you are required to make and account in the librawry to use it and give a limited time of an hour to use the computers. </p>
+<img src="https://www.harrowtowncentre.co.uk/wp-content/uploads/2021/05/exterior-01.jpg.855x0_q85.jpg" alt="Greenhill library">
+</div>
+
+<div id="Opening Times" class="tabcontent">
+<h3>Opening Times</h3>
+<p>The Opening times are listed below: </p>
+
+<table>
+<tr>
+<th>Day</th>
+<th>Opening Time</th>
+<th>Closing Time</th>
+</tr>
+<tr>
+<td>Monday</td>
+<td>10:00 AM</td>
+<td>6:00 PM</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>10:00 AM</td>
+<td>6:00 PM</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>10:00 AM</td>
+<td>6:00 PM</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>10:00 AM</td>
+<td>6:00 PM</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>10:00 AM</td>
+<td>6:00 PM</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>10:00 AM</td>
+<td>6:00 PM</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>Closed</td>
+<td>-</td>
+</tr>
+</table>
+</div>

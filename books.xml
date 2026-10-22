@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<!DOCTYPE bookstore SYSTEM "books.dtd">
+
+<bookstore>
+    <book>
+        <title>The Hobbit</title>
+        <author>J.R.R. Tolkien</author>
+        <year>1937</year>
+        <price>8.99</price>
+    </book>
+
+    <book>
+        <title>1984</title>
+        <author>George Orwell</author>
+        <year>1949</year>
+        <price>7.50</price>
+    </book>
+
+    <book>
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <year>1960</year>
+        <price>6.99</price>
+    
+    </book>
+
+    <book>
+        <title>The Great Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <year>1925</year>
+        <price>10.99</price>
+    </book>
+
+
+
+   <book>
+        <title>Dune</title>
+        <author>Frank Herbert</author>
+        <year>1965</year>
+        <price>12.99</price>
+    </book>
+
+
+
+</bookstore>
